@@ -1,0 +1,128 @@
+@define-color bg        #3C3836;  /* lighter background */
+@define-color bg_alt    #292828;  /* slightly darker for focus */
+@define-color fg        #D4BE98;  /* text */
+@define-color accent    #D8A557;  /* yellow */
+@define-color green     #A9B565;
+@define-color pink      #D3869B;
+@define-color red       #E96962;
+@define-color border    #3C3836;
+
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 12px;
+  color: @fg;
+}
+
+window#waybar {
+  background-color: @bg;
+  color: @fg;
+  border-bottom: 1px solid @border;
+  min-height: 28px;
+}
+
+/* Buttons / Workspaces */
+button {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: inset 0 -2px transparent;
+}
+#workspaces button { padding: 0 8px; }
+#workspaces button.active {
+  background: @fg;
+  box-shadow: inset 0 -2px @accent;
+}
+#workspaces button:hover {
+  background: @fg;
+}
+#workspaces button.urgent {
+  background: @red;
+  box-shadow: inset 0 -2px @accent;
+}
+#workspaces button.active label{
+  color: @bg;
+}
+#workspaces button:hover label{
+  color: @bg;
+}
+#window, #workspaces { margin: 0 0px; }
+
+/* Module spacing */
+#tray, #clock, #cpu, #network, #battery, #backlight, #pulseaudio,
+#idle_inhibitor, #power-profiles-daemon, #custom-media, #keyboard-state {
+  padding: 1px 10px;
+}
+
+#custom-spotify  {
+  padding: 1px 4px;
+}
+
+#memory {
+  padding: 1px 0px;
+}
+
+/* States */
+#pulseaudio.muted { color: @pink; }
+#network.disconnected { color: @accent; }
+#battery.warning  { color: @accent; }
+#battery.critical { color: @red; }
+
+/* Tooltip */
+tooltip {
+  background: @bg;
+  color: @fg;
+  border: 1px solid @border;
+}
+
+#tray {
+  padding-right: 0;
+}
+
+#custom-power {
+  padding-left: 0px;
+  padding-right: 11px;
+  padding-bottom: 1px;
+  font-family: "JetBrainsMono Nerd Font";
+}
+
+#custom-power:hover {
+    background: @fg;
+    color: @bg;
+}
+
+#clock:hover {
+    background: @fg;
+    color: @bg;
+}
+
+#cpu:hover {
+    background: @fg;
+    color: @bg;
+}
+
+#memory:hover {
+    background: @fg;
+    color: @bg;
+}
+
+#wireplumber:hover {
+    background: @fg;
+    color: @bg;
+}
+
+#cpu:hover {
+    background: @fg;
+    color: @bg;
+}
+
+#custom-notification {
+  padding-left: 9px;
+  padding-right: 11px;
+  padding-bottom: 1px;
+  font-family: "JetBrainsMono Nerd Font";
+}
+
+#custom-notification:hover {
+    background: @fg;
+    color: @bg;
+}

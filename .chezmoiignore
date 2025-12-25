@@ -1,0 +1,5 @@
+README.md
+backups/   # ignore the backups folder, but not its contents
+backups/** # ignore the contents of backups folder but not the folder itself
+dot_config/micro/buffers/
+dot_config/micro/buffers/**

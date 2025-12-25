@@ -1,0 +1,141 @@
+@define-color selected-text #3C3836;
+@define-color text #D4BE98;
+@define-color base #3C3836;
+@define-color border #FFC300;
+@define-color foreground #D4BE98;
+@define-color background #3C3836;
+@define-color match #A8B565;
+@define-color selection-match #EA6962;
+@define-color selection-background #bdae93;
+
+* {
+  all: unset;
+}
+
+* {
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 14px !important;
+  color: @text;
+}
+
+label {
+  font-size: 14px !important;
+}
+
+.item-text {
+  font-size: 14px !important;
+}
+
+scrollbar {
+  opacity: 0;
+}
+
+.normal-icons {
+  -gtk-icon-size: 16px !important;
+}
+
+.large-icons {
+  -gtk-icon-size: 32px !important;
+}
+
+.box-wrapper {
+  background: alpha(@base, 0.9);
+  padding: 10px;
+  border: 1px solid @border;
+  border-radius: 5px;
+}
+
+.preview-box {
+}
+
+.box {
+}
+
+.search-container {
+  background: transparent;
+  padding: 10px 10px 10px 10px;
+}
+
+.input placeholder {
+  opacity: 0.5;
+}
+
+.input {
+  font-size: 14px !important;
+}
+
+.input:focus,
+.input:active {
+  box-shadow: none;
+  outline: none;
+}
+
+.content-container {
+}
+
+.placeholder {
+}
+
+.scroll {
+}
+
+.list {
+}
+
+child,
+child > * {
+  font-size: 14px !important;
+}
+
+child:hover .item-box {
+}
+
+child:selected .item-box {
+   background: @selection-background;
+   border-radius: 0px;
+}
+
+child:selected .item-box * {
+  color: @selected-text;
+}
+
+.item-box {
+  padding-left: 14px;
+  border-radius: 0px;
+}
+
+.item-text-box {
+  all: unset;
+  padding: 4px 0;
+}
+
+.item-text {
+  font-size: 14px;
+}
+
+.item-subtext {
+  font-size: 0px;
+  min-height: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.item-image {
+  margin-right: 14px;
+  -gtk-icon-transform: scale(0.9);
+  font-size: 14px !important;
+}
+
+.current {
+  font-style: italic;
+}
+
+.keybind-hints {
+  background: @background;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+
+.preview {
+}

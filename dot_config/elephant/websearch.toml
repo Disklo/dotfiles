@@ -1,0 +1,35 @@
+[[entries]]
+prefix = "g"
+name = "Google"
+url = "https://www.google.com/search?q=%TERM%"
+icon = "google"
+
+[[entries]]
+prefix = "d"
+name = "DuckDuckGo"
+url = "https://duckduckgo.com/?q=%TERM%"
+icon = "duckduckgo"
+
+[[entries]]
+prefix = "s"
+name = "Scryfall"
+url = "https://scryfall.com/search?q=%TERM%"
+icon = "scryfall"
+
+[[entries]]
+prefix = "y"
+name = "Youtube"
+url = "https://www.youtube.com/results?search_query=%TERM%"
+icon = "youtube"
+
+[[entries]]
+prefix = "w"
+name = "Wikipedia"
+url = "https://en.wikipedia.org/wiki/Special:Search?search=%TERM%"
+icon = "wikipedia"
+
+[[entries]]
+name = "GitHub"
+prefix = "gh"
+url = "https://github.com/search?q=%TERM%"
+icon = "github"

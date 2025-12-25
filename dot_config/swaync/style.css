@@ -1,0 +1,171 @@
+@define-color bg #282828;
+@define-color bg-lighter #3c3836;
+@define-color fg #d4be98;
+@define-color border #504945;
+@define-color red #ea6962;
+@define-color green #a9b665;
+@define-color yellow #d8a657;
+@define-color blue #7daea3;
+@define-color magenta #d3869b;
+@define-color cyan #89b482;
+
+:root {
+  --notification-width: 400px;
+  --notification-icon-size: 64px;
+}
+
+* {
+  font-family: "JetBrainsMono Nerd Font";
+}
+
+.notification-row {
+  outline: none;
+  margin-top: 5px;
+}
+
+.notification-row:focus,
+.notification-row:hover {
+  background: transparent;
+}
+
+.notification {
+  border-radius: 0px;
+  box-shadow: none;
+  margin-bottom: 3px;
+  background: @bg;
+  border: 2px solid @border;
+  padding: 0;
+}
+
+.notification-content {
+  background: transparent;
+  padding: 10px;
+}
+
+.close-button {
+  background: transparent;
+  color: @fg;
+  text-shadow: none;
+  padding: 0;
+  border-radius: 0px;
+  margin-top: 5px;
+  margin-right: 5px;
+  box-shadow: none;
+  border: none;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.close-button:hover {
+  box-shadow: none;
+  background: @bg-lighter;
+  transition: none;
+  border: none;
+}
+
+.notification-default-action,
+.notification-action {
+  padding: 4px;
+  margin: 0;
+  box-shadow: none;
+  background: transparent;
+  border: none;
+  color: @fg;
+  border-radius: 0px;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+  -gtk-icon-effect: none;
+  background: @bg-lighter;
+  border-radius: 0px;
+}
+
+.summary {
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  color: @fg;
+  text-shadow: none;
+}
+
+.time {
+  font-size: 12px;
+  font-weight: bold;
+  background: transparent;
+  color: @fg;
+  text-shadow: none;
+  margin-right: 18px;
+}
+
+.body {
+  font-size: 14px;
+  font-weight: normal;
+  background: transparent;
+  color: @fg;
+  text-shadow: none;
+}
+
+.control-center {
+  background: @bg;
+  border: 2px solid @border;
+  border-radius: 0px;
+  padding: 10px;
+  box-shadow: none;
+}
+
+/* WIDGETS */
+
+.widget-title {
+  color: @fg;
+  background: @bg-lighter;
+  padding: 10px;
+  margin: 10px 10px 5px 10px;
+  border-radius: 0px;
+  font-size: 1.2rem;
+  border: 1px solid @border;
+}
+
+.widget-title > button {
+  font-size: 1rem;
+  color: @fg;
+  text-shadow: none;
+  background: @bg;
+  box-shadow: none;
+  border-radius: 0px;
+  border: 1px solid @border;
+  padding: 5px 10px;
+  margin-right: 0;
+}
+
+.widget-title > button:hover {
+  background: @fg;
+  color: @bg;
+  border: 1px solid @fg;
+}
+
+.widget-dnd {
+  margin: 10px;
+  padding: 10px;
+  background: @bg-lighter;
+  border-radius: 0px;
+  font-size: 1rem;
+  color: @fg;
+  border: 1px solid @border;
+}
+
+.widget-dnd > switch {
+  border-radius: 0px;
+  background: @bg;
+  border: 1px solid @border;
+}
+
+.widget-dnd > switch:checked {
+  background: @cyan;
+  border: 1px solid @cyan;
+}
+
+.widget-dnd > switch slider {
+  background: @fg;
+  border-radius: 0px;
+}

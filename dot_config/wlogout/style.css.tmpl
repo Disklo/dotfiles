@@ -1,0 +1,51 @@
+* {
+	background-image: none;
+	box-shadow: none;
+}
+
+window {
+	background-color: rgba(50, 48, 47, 0.9);
+}
+
+button {
+    border-radius: 0;
+    border-color: #D8A657; 
+	text-decoration-color: #D4BD97;
+    color: #D4BD97;
+	background-color: #32302F;
+	border-style: solid;
+	border-width: 1px;
+	margin: 5;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
+}
+
+button:focus, button:active, button:hover {
+	background-color: #45403D;
+	outline-style: none;
+}
+
+#lock {
+    background-image: image(url("{{ .chezmoi.homeDir }}/.local/share/wlogout/icons/lock.png"));
+}
+
+#logout {
+    background-image: image(url("{{ .chezmoi.homeDir }}/.local/share/wlogout/icons/logout.png"));
+}
+
+#suspend {
+    background-image: image(url("{{ .chezmoi.homeDir }}/.local/share/wlogout/icons/suspend.png"));
+}
+
+#hibernate {
+    background-image: image(url("{{ .chezmoi.homeDir }}/.local/share/wlogout/icons/hibernate.png"));
+}
+
+#shutdown {
+    background-image: image(url("{{ .chezmoi.homeDir }}/.local/share/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+    background-image: image(url("{{ .chezmoi.homeDir }}/.local/share/wlogout/icons/reboot.png"));
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": "Aperture",
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    //"host",
+    "kernel",
+    // "uptime",
+    // "packages",
+    "shell",
+    {
+    "type": "display",
+    "key": "Display",
+    "format": "{preferred-width}x{preferred-height} ({refresh-rate}Hz)"
+    },
+    "de",
+    "wm",
+    //"wmtheme",
+    //"theme",
+    //"icons",
+    //"font",
+    //"cursor",
+    "terminal",
+    {
+    "type": "terminalfont",
+    "key": "Font",
+    "format": "{name} ({size}pt)"
+    },
+    {
+    "type": "cpu",
+    "format": "{name}"
+    },
+    {
+    "type": "gpu",
+    "format": "{name}"
+    },
+    "memory",
+    "swap",
+    {
+    "type": "disk",
+    "key": "{name}", 
+    "format": "{size-used} / {size-total} ({size-percentage})"
+    },
+    //"localip",
+    "battery",
+    //"poweradapter",
+    //"locale",
+    "break",
+    "colors"
+  ]
+}

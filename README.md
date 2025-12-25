@@ -40,9 +40,9 @@ The following software is required to fully utilize the configurations provided 
 *   **Btop++**: Resource monitor.
 *   **Fastfetch**: System information fetcher.
 
-## Installation
+## Automatic installation
 
-To install these dotfiles, ensure you have [chezmoi](https://www.chezmoi.io/) installed, then run:
+To install these dotfiles, ensure you have [chezmoi](https://www.chezmoi.io/) and the programs listed above installed, then run:
 
 ```bash
 chezmoi init --apply https://github.com/Disklo/dotfiles

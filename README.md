@@ -45,7 +45,7 @@ The following software is required to fully utilize the configurations provided 
 To install these dotfiles, ensure you have [chezmoi](https://www.chezmoi.io/) installed, then run:
 
 ```bash
-chezmoi init --apply <your-repo-url>
+chezmoi init --apply https://github.com/Disklo/dotfiles
 ```
 
 If you've already cloned this repository:

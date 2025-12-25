@@ -100,6 +100,10 @@ Download "Linux.zip" from the releases page, then extract the contents of the fo
 
 ### Application-specific Theming
 
+**Firefox:** [Custom Firefox Color theme](https://color.firefox.com/?theme=XQAAAAI9AQAAAAAAAABBKYhm849SCia48_6EGccwS-xMDPsA3z21-ZkHMR68RWm6ZSBlkFnylGzRdfX3mZg4q0bP7pWy8JPnGjCixnrKO7fhlXBWUgMqcln92oXnfwX3nE5DPMIlrnlSlubIOp_SINOM4dw1LWs6Xn62CE0Eew7Lm4m5l4PEPRsr9nfZnqDXonWDleEE-4fr17Y6FXScel-8PSOWgkhr0DGEjMqj0NZPmovTNFg0I47_q08AAA)
+1. Make sure to have the Firefox Color add-on installed
+2. Install this [Firefox Color theme](https://color.firefox.com/?theme=XQAAAAI9AQAAAAAAAABBKYhm849SCia48_6EGccwS-xMDPsA3z21-ZkHMR68RWm6ZSBlkFnylGzRdfX3mZg4q0bP7pWy8JPnGjCixnrKO7fhlXBWUgMqcln92oXnfwX3nE5DPMIlrnlSlubIOp_SINOM4dw1LWs6Xn62CE0Eew7Lm4m5l4PEPRsr9nfZnqDXonWDleEE-4fr17Y6FXScel-8PSOWgkhr0DGEjMqj0NZPmovTNFg0I47_q08AAA)
+
 **VS Code:** [Gruvbox Material](https://marketplace.visualstudio.com/items?itemName=sainnhe.gruvbox-material)
 ```bash
 code --install-extension sainnhe.gruvbox-material

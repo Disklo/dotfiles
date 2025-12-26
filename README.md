@@ -49,7 +49,7 @@ The following software is required to fully utilize the configurations provided 
 
 ## Automatic installation
 
-To install these dotfiles, ensure you have [chezmoi](https://www.chezmoi.io/) and the programs listed above installed, then run:
+To install these dotfiles, ensure you have [chezmoi](https://www.chezmoi.io/) and [the programs listed above in the requirements section](#requirements) installed as well as the listed required font, then run:
 
 ```bash
 chezmoi init --apply https://github.com/Disklo/dotfiles
@@ -61,9 +61,9 @@ If you've already cloned this repository:
 chezmoi init --apply --source=$PWD
 ```
 
-## Theming & Appearance
+## Manual installation required
 
-This setup uses a consistent Gruvbox Material theme across the system. Below are the specific components and installation instructions (assuming an Arch-based system with an AUR helper like `yay`).
+Below are the installation instructions for parts of my setup which require manual installation. These instructions assume you are using an Arch-based system with an AUR helper like `yay`.
 
 ### Icons & System Themes
 
@@ -127,12 +127,14 @@ Then open it and apply the built-in Gruvbox theme.
 
 **Spotify:** [Spicetify Text Theme](https://github.com/spicetify/spicetify-themes/tree/master/text)
 1. Install [Spicetify CLI](https://github.com/spicetify/spicetify-cli).
-2. Install the [spicetify-themes](https://github.com/spicetify/spicetify-themes).
+2. Install [spicetify-themes](https://github.com/spicetify/spicetify-themes).
 3. Apply the "text" theme:
 ```bash
 spicetify config current_theme text
+spicetify config color_scheme Gruvbox
 spicetify apply
 ```
+Alternatively you could install the theme through the [Spicetify Marketplace](https://github.com/spicetify/marketplace).
 
 **Krita:**
 The color scheme is included in this repository at `~/.local/share/krita/color-schemes/gruvboxmaterial.colors`.

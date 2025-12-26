@@ -87,7 +87,10 @@ You may also use nwg-look.
 ```bash
 yay -S kvantum-theme-gruvbox-git
 ```
-Use qt5ct, qt6ct and kvantum manager to aplly the theme.
+Use qt5ct, qt6ct and kvantum manager to apply the theme. As for qt5ct and qt6ct, I highly recommend the use of their respective patched versions:
+```bash
+yay -S qt5ct-kde qt6ct-kde
+```
 
 **Adwaita/Libadwaita Theme:** [Rewaita](https://github.com/SwordPuffin/Rewaita)
 ```bash
@@ -132,3 +135,6 @@ The color scheme is included in this repository at `~/.local/share/krita/color-s
 4. Go to **Settings** -> **Configure Krita...** -> **Color Scheme**.
 5. Select **Gruvbox Material Dark** from the list.
 6. Click **OK**.
+
+# Credits
+- **Waybar CSS base:** https://github.com/timkicker/dotfiles

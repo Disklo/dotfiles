@@ -44,6 +44,9 @@ The following software is required to fully utilize the configurations provided 
 *   **Btop++**: Resource monitor.
 *   **Fastfetch**: System information fetcher.
 
+### Fonts
+*   **JetBrains Mono Nerd Font**: Can be found in the Arch 'Extra' repo under the package name `ttf-jetbrains-mono-nerd`.
+
 ## Automatic installation
 
 To install these dotfiles, ensure you have [chezmoi](https://www.chezmoi.io/) and the programs listed above installed, then run:

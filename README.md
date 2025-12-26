@@ -136,5 +136,5 @@ The color scheme is included in this repository at `~/.local/share/krita/color-s
 5. Select **Gruvbox Material Dark** from the list.
 6. Click **OK**.
 
-# Credits
+## Credits
 - **Waybar CSS base:** https://github.com/timkicker/dotfiles

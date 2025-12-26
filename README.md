@@ -8,7 +8,7 @@ My personal dotfiles managed with [chezmoi](https://www.chezmoi.io/).
 
 ## Requirements
 
-The following software is required to fully utilize the configurations provided in this repository (specifically the Hyprland setup).
+The following software is required to fully utilize the configurations provided in this repository (specifically the Hyprland setup, but SwayFX and Niri config files are coming soon).
 
 ### Core & Window Management
 *   **Hyprland**: The tiling window manager.

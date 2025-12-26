@@ -2,6 +2,10 @@
 
 My personal dotfiles managed with [chezmoi](https://www.chezmoi.io/).
 
+<img width="1920" height="1080" alt="image_57" src="https://github.com/user-attachments/assets/d06e6e2f-0e45-4dba-86ce-926b876984ad" />
+
+<img width="1920" height="1080" alt="image_54" src="https://github.com/user-attachments/assets/013efa47-7a03-4024-94f7-4047b2ac374c" />
+
 ## Requirements
 
 The following software is required to fully utilize the configurations provided in this repository (specifically the Hyprland setup).

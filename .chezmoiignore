@@ -7,3 +7,6 @@ dot_config/micro/buffers/**
 ~/.config/hypr/config/local.conf
 ~/.config/micro/buffers/
 ~/.config/micro/buffers/**
+dot_local/share/backgrounds/non-free/
+dot_local/share/backgrounds/non-free/**
+~/.local/share/backgrounds/non-free/

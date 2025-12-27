@@ -3,3 +3,5 @@ backups/** # ignore the contents of backups folder but not the folder itself
 dot_config/hypr/config/local.conf
 dot_config/micro/buffers/
 dot_config/micro/buffers/**
+dot_local/share/backgrounds/non-free/
+~/.local/share/backgrounds/non-free/

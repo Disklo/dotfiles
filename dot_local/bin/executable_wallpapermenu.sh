@@ -41,12 +41,15 @@ hyprctl hyprpaper listloaded | while read -r loaded; do
 done
 
 if [[ -f "$HYPRPAPER_CONF" ]]; then
-    grep -v '^preload = ' "$HYPRPAPER_CONF" | grep -v '^wallpaper = ' | sed '/^$/d' > "$HYPRPAPER_CONF.tmp"
+    # Remove old wallpaper blocks and preload lines
+    sed -e '/wallpaper {/,/}/d' -e '/^preload = /d' "$HYPRPAPER_CONF" | sed '/^$/d' > "$HYPRPAPER_CONF.tmp"
     
     {
-        echo "preload = $WALLPAPER_PATH"
         for monitor in $(hyprctl monitors -j | jq -r '.[].name'); do
-            echo "wallpaper = $monitor, $WALLPAPER_PATH"
+            echo "wallpaper {"
+            echo "    monitor = $monitor"
+            echo "    path = $WALLPAPER_PATH"
+            echo "}"
         done
         echo ""
         cat "$HYPRPAPER_CONF.tmp"

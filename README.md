@@ -43,6 +43,7 @@ The following software is required to fully utilize the configurations provided 
 *   **Micro**: Terminal text editor.
 *   **Btop++**: Resource monitor.
 *   **Fastfetch**: System information fetcher.
+*   **MPV**: Video player
 
 ### Fonts
 *   **JetBrains Mono Nerd Font**: Can be found in the Arch 'Extra' repo under the package name `ttf-jetbrains-mono-nerd`.

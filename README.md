@@ -30,7 +30,7 @@ The following software is required to fully utilize the configurations provided 
 *   **Blueman**: Bluetooth manager.
 *   **Brightnessctl**: Screen brightness control.
 *   **Playerctl**: Media playback control.
-*   **Imagepicker**: Backend for the wallpaper selector. (https://github.com/Disklo/imagepicker)
+*   **Imagepicker**: Front-end for the wallpaper selector script. (https://github.com/Disklo/imagepicker)
 *   **Elephant**: Backend for Walker.
 *   **obs-cmd**: Command line tool for controlling OBS Studio.
 

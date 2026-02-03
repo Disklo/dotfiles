@@ -33,6 +33,7 @@ The following software is required to fully utilize the configurations provided 
 *   **Imagepicker**: Front-end for the wallpaper selector script. (https://github.com/Disklo/imagepicker)
 *   **Elephant**: Backend for Walker.
 *   **obs-cmd**: Command line tool for controlling OBS Studio.
+*   **xdg-terminal-exec**
 
 ### Applications
 *   **Foot**: Terminal emulator.

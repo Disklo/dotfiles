@@ -1,0 +1,10 @@
+source ~/.config/fish/cachyos-config.fish
+{{ if (stat (joinPath .chezmoi.homeDir ".config/fish/local.fish")) -}}
+source ~/.config/fish/local.fish
+{{- end }}
+
+#function fish_greeting
+#    hyfetch
+#end
+starship init fish | source
+zoxide init fish | source

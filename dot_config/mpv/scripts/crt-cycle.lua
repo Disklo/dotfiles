@@ -64,5 +64,45 @@ function cycle_shaders()
     end
 end
 
+function cycle_shaders_reverse()
+    local shaders = get_shader_list()
+    if #shaders == 0 then
+        mp.osd_message("No CRT shaders found in " .. shader_folder)
+        return
+    end
+
+    local current = mp.get_property("glsl-shaders", "")
+    local found_index = 0
+    
+    for i, shader in ipairs(shaders) do
+        local filename = shader:match("([^/]+)$")
+        if current:find(filename, 1, true) then
+            found_index = i
+            break
+        end
+    end
+    
+    for _, shader in ipairs(shaders) do
+        mp.commandv("change-list", "glsl-shaders", "remove", shader)
+    end
+    
+    local prev_index = 0
+    if found_index == 0 then
+        prev_index = #shaders
+    else
+        prev_index = found_index - 1
+    end
+
+    if prev_index > 0 then
+        local prev_shader = shaders[prev_index]
+        mp.commandv("change-list", "glsl-shaders", "append", prev_shader)
+        local name = prev_shader:match("([^/]+)%.glsl$")
+        mp.osd_message("CRT Shader: " .. name)
+    else
+        disable_shaders()
+    end
+end
+
 mp.register_script_message("cycle-crt-shaders", cycle_shaders)
+mp.register_script_message("cycle-crt-shaders-reverse", cycle_shaders_reverse)
 mp.register_script_message("disable-crt-shaders", disable_shaders)

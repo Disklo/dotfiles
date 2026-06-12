@@ -16,7 +16,7 @@ The following software is required to fully utilize the configurations provided 
 *   **SwayNC**: Notification daemon.
 *   **Walker**: Application launcher.
 *   **Hyprpaper**: Wallpaper utility.
-*   **Swayidle**: Idle management daemon.
+*   **Hypridle**: Idle management daemon.
 *   **Polkit-Gnome**: Authentication agent.
 *   **Gnome Keyring**: Secrets management.
 

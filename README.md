@@ -10,7 +10,6 @@ My personal dotfiles managed with [chezmoi](https://www.chezmoi.io/).
 
 The following software is required to fully utilize the configurations provided in this repository (specifically the Hyprland setup, but SwayFX and Niri config files are coming soon).
 
-### Core & Window Management
 *   **Hyprland**: The tiling window manager.
 *   **Waybar**: Status bar.
 *   **SwayNC**: Notification daemon.
@@ -19,8 +18,6 @@ The following software is required to fully utilize the configurations provided 
 *   **Hypridle**: Idle management daemon.
 *   **Polkit-Gnome**: Authentication agent.
 *   **Gnome Keyring**: Secrets management.
-
-### Tools & Utilities
 *   **Wlogout**: Logout menu.
 *   **Hyprshot**: Screenshot utility.
 *   **Hyprpicker**: Color picker.
@@ -30,16 +27,16 @@ The following software is required to fully utilize the configurations provided 
 *   **Blueman**: Bluetooth manager.
 *   **Brightnessctl**: Screen brightness control.
 *   **Playerctl**: Media playback control.
+*	**gsimplecal**: Calendar.
 *   **Imagepicker**: Front-end for the wallpaper selector script. (https://github.com/Disklo/imagepicker)
 *   **Elephant**: Backend for Walker.
 *   **obs-cmd**: Command line tool for controlling OBS Studio.
 *   **xdg-terminal-exec**
-
-### Applications
 *   **Foot**: Terminal emulator.
 *   **Fish**: Shell.
 *   **Starship**: Cross-shell prompt.
 *   **Thunar**: File manager.
+*	**Tumbler**: Thumbnail generator for Thunar.]
 *   **VS Code**: Code editor (referenced as `code`).
 *   **Micro**: Terminal text editor.
 *   **Btop++**: Resource monitor.

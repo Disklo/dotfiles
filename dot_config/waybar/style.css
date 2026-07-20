@@ -79,8 +79,17 @@ tooltip {
 }
 
 #custom-power {
+  border-radius: 0;
+  min-height: 0;
+  min-width: 0;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  border: none;
+  outline: none;
   padding-left: 0px;
   padding-right: 11px;
+  padding-top: 1px;
   padding-bottom: 1px;
   font-family: "JetBrainsMono Nerd Font";
 }
@@ -116,8 +125,17 @@ tooltip {
 }
 
 #custom-notification {
+  border-radius: 0;
+  min-height: 0;
+  min-width: 0;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  border: none;
+  outline: none;
   padding-left: 9px;
   padding-right: 11px;
+  padding-top: 1px;
   padding-bottom: 1px;
   font-family: "JetBrainsMono Nerd Font";
 }

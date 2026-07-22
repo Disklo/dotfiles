@@ -17,8 +17,12 @@ hl.bind(mainMod .. " + E",
     { description = "Opens your preferred filemanager (" .. filemanager .. ")" })
 
 hl.bind(mainMod .. " + Q",
+    hl.dsp.window.close(),
+    { description = "Closes current window" })
+
+hl.bind(mainMod .. " + SHIFT + Q",
     hl.dsp.window.kill(),
-    { description = "Closes (not kill) current window" })
+    { description = "Force kill current window process" })
 
 hl.bind(mainMod .. " + SHIFT + M",
     hl.dsp.exec_cmd("loginctl terminate-user \"\""),

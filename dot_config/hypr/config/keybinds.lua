@@ -58,6 +58,10 @@ hl.bind("SHIFT + PRINT",
     hl.dsp.exec_cmd("hyprshot -m region --clipboard-only --freeze"),
     { description = "Screenshot a region" })
 
+-- ─── OCR ───────────────────────────────────────────────────────
+
+hl.bind(mainMod .. " + SHIFT + PRINT", hl.dsp.exec_cmd("~/.local/bin/ocr.sh"), { description = "OCR screen region with VLM" })
+
 -- ─── Color Picker ──────────────────────────────────────────────
 
 hl.bind(mainMod .. " + C",
